@@ -27,7 +27,7 @@
 
   <groupId>org.goots</groupId>
   <artifactId>pme-example</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.jbossorg-000573</version>
   <packaging>pom</packaging>
 
   <name>PME Examples</name>
