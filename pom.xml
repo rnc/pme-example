@@ -19,15 +19,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>com.redhat.rcm</groupId>
-    <artifactId>redhat-releng-tools</artifactId>
-    <version>4</version>
-  </parent>
-
   <groupId>org.goots</groupId>
   <artifactId>pme-example</artifactId>
-  <version>1.0.jbossorg-000573</version>
+  <version>1.0.0</version>
   <packaging>pom</packaging>
 
   <name>PME Examples</name>
@@ -69,7 +63,7 @@
       <dependency>
         <groupId>org.apache.james</groupId>
         <artifactId>apache-mime4j</artifactId>
-        <version>0.6</version>
+        <version>(0.3,0.6.1)</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -80,7 +74,7 @@
         <plugin>
           <groupId>net.alchim31.maven</groupId>
           <artifactId>scala-maven-plugin</artifactId>
-          <version>3.3.1</version>
+          <version>[3.3.0,3.4)</version>
         </plugin>
       </plugins>
     </pluginManagement>
