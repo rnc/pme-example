@@ -21,7 +21,7 @@
 
   <groupId>org.goots</groupId>
   <artifactId>pme-example</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>PME Examples</name>
@@ -45,7 +45,7 @@
   </scm>
 
   <properties>
-    <slf4j.version>1.7.21</slf4j.version>
+    <slf4j.version>1.7.21-SNAPSHOT</slf4j.version>
   </properties>
 
   <dependencyManagement>
