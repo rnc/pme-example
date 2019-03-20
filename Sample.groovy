@@ -1,5 +1,9 @@
 
 
+// This grab annotation ( http://docs.groovy-lang.org/latest/html/api/groovy/lang/Grab.html )
+// is not actually needed at runtime (as PME will automatically provide the dependencies) but
+// its useful during development as IntelliJ can then correctly locate the dependencies for
+// the project and provide completion assist.
 @Grab('org.commonjava.maven.ext:pom-manipulation-core:3.5')
 
 import org.commonjava.maven.ext.core.groovy.PMEBaseScript
