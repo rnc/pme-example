@@ -45,7 +45,7 @@
   </scm>
 
   <properties>
-    <slf4j.version>1.7.21</slf4j.version>
+    <shared.version>0.8.0</shared.version>
   </properties>
 
   <dependencyManagement>
@@ -53,31 +53,20 @@
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
-        <version>${slf4j.version}</version>
+        <version>${shared.version}</version>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>dummy-slf4j</artifactId>
-        <version>${slf4j.version}</version>
+        <version>${shared.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.james</groupId>
         <artifactId>apache-mime4j</artifactId>
-        <version>0.6</version>
+        <version>${shared.version}</version>
         <scope>test</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
 
-  <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>net.alchim31.maven</groupId>
-          <artifactId>scala-maven-plugin</artifactId>
-          <version>[3.3.0,3.4)</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
 </project>
