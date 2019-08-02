@@ -19,9 +19,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.goots</groupId>
-  <artifactId>pme-example</artifactId>
-  <version>1.0.0</version>
+  <parent>
+    <groupId>org.kie</groupId>
+    <artifactId>kie-parent</artifactId>
+    <version>7.7.0.Final-redhat-10</version>
+  </parent>
+
+  <groupId>org.goots.maven.pme-example</groupId>
+  <artifactId>parent</artifactId>
+  <version>7.7.0.Final</version>
+
   <packaging>pom</packaging>
 
   <name>PME Examples</name>
@@ -45,7 +52,7 @@
   </scm>
 
   <properties>
-    <shared.version>0.8.0</shared.version>
+    <slf4j.version>1.7.22.redhat-1</slf4j.version>
   </properties>
 
   <dependencyManagement>
@@ -53,20 +60,19 @@
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
-        <version>${shared.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>dummy-slf4j</artifactId>
-        <version>${shared.version}</version>
+        <version>${slf4j.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.james</groupId>
         <artifactId>apache-mime4j</artifactId>
-        <version>${shared.version}</version>
+        <version>0.8.0</version>
         <scope>test</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <modules>
+    <module>child</module>
+  </modules>
 
 </project>
